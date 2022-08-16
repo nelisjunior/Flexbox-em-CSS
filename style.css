@@ -1,0 +1,154 @@
+.flex{
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    display: flex;
+}
+
+.item{
+    font-size: 24px;
+    height: 50%;
+    text-align: center;
+    min-width: 100px;
+    line-height: 50px;
+}
+
+.flex-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    border: 2px solid black;
+    max-width: 310px;
+
+}
+
+.flex-item{
+    background: blue;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    text-align:  center;
+    margin: 5px;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.row-reverse li{
+    background-color: red;
+}
+
+.column{
+    float: left;
+    flex-direction: column;
+}
+
+.column li{
+    background: orange;
+}
+
+.column-reverse{
+    float: right;
+    flex-direction: column-reverse;
+}
+
+.column-reverse li{
+    background: purple;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: lightgreen;
+}
+
+.orange{
+    background-color: orangered;
+}
+
+/* ====================== Botões ====================== */
+
+.buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#ffffff;
+  border-color:#337fed;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow:inset 0px 1px 0px 0px #97c4fe;
+  text-shadow:inset 0px 1px 0px #1570cd;
+  background:linear-gradient(#3d94f6, #1e62d0);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#1e62d0, #3d94f6);
+}
+
+/* NAV BAR */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
