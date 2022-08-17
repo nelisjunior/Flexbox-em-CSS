@@ -4,7 +4,7 @@
     border: 2px solid black;
     display: flex;
 }
-/* update */
+
 .item{
     font-size: 24px;
     height: 50%;
@@ -26,7 +26,15 @@
     height: 150px;
     border: 2px solid black;
     max-width: 310px;
+}
 
+.flex-container-flow{
+    display: flex;
+    flex-direction: row nowrap;
+    border: 1px solid black;
+    max-width: 500px;
+    max-height: 200px;
+    margin-bottom: 10px;
 }
 
 .flex-item{
@@ -40,6 +48,19 @@
     margin: 5px;
 }
 
+.item-flow{
+    background: blueviolet;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    text-align:  center;
+    margin: 5px;
+}
+
+/* ================== LINHAS ================== */
+
 .row{
     flex-direction: row;
 }
@@ -51,6 +72,8 @@
 .row-reverse li{
     background-color: red;
 }
+
+/* ================== COLUNAS ================== */
 
 .column{
     float: left;
@@ -70,17 +93,47 @@
     background: purple;
 }
 
-.nowrap{
-    flex-wrap: nowrap;
-}
+/* ================== FLEX WRAPS ================== */
 
 .wrap{
     flex-wrap: wrap;
 }
 
+.nowrap{
+    flex-wrap: nowrap;
+}
+
 .wrap-reverse{
     flex-wrap: wrap-reverse;
 }
+
+/* ================== FLEX FLOWS ================== */
+
+.default-flow{
+    flex-flow: row nowrap;
+}
+
+.wrap-flow{
+    flex-flow: row wrap;
+}
+
+.wrap-reverse-flow{
+    flex-flow: column wrap-reverse;
+}
+
+.r-nowrap-flow{
+    flex-flow: row-reverse nowrap;
+}
+
+.r-wrap-flow{
+    flex-flow: row-reverse wrap;
+}
+
+.rr-wrap-flow{
+    flex-flow: row-reverse wrap-reverse;
+}
+
+/* ================== CORES ================== */
 
 .blue{
     background-color: blue;
